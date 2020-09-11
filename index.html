@@ -1,418 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-        <link rel="stylesheet" href="css/fonts-icon.css">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-         <title>jamSTACK | new feature of the frontend</title>
-    </head>
-    <body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fonts-icon.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.comp.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <title>jamSTACK | new feature of the frontend</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">About&nbsp;&nbsp;</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Benfits</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Courses</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-        <div class="navigation">
-            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
-            <div class="navigation__background">&nbsp;</div>
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">About&nbsp;&nbsp;</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Benfits</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Courses</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Stories</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#" class="navigation__link">Contact us</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="header">
+      <div class="header__logo-box"></div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Jam stack</span>
+          <span class="heading-primary--sub"
+            >the new feature of the frontend development</span
+          >
+        </h1>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Get started</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            JAM stands for JavaScript, API & Markup
+          </h2>
         </div>
 
-        <header class="header">
-            <div class="header__logo-box">
-             </div>
-            <div class="header__text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary--main">Jam stack</span>
-                    <span class="heading-primary--sub">the new feature of the frontend development</span>
-                </h1>
-                <a href="#section-tours" class="btn btn--white btn--animated">Get started</a>
-            </div>
-        </header>
-        <main>
-            <section class="section-about">
-                <div class="u-center-text u-margin-bottom-big">
-                     <h2 class="heading-secondary">
-                         JAM stands for JavaScript, API & Markup
-                     </h2>
-                </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              modern frontend web development architecture
+            </h3>
+            <p class="paragraph">
+              Front end developers can focus on the front end, without being
+              tied to a monolithic architecture. This usually means quicker and
+              more focused development.
+            </p>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              better performance, lower cost and greater scalability.
+            </h3>
+            <p class="paragraph">
+              If your product suddenly goes viral and has many active users, the
+              CDN seamlessly compensates.
+            </p>
+            <a href="#" class="btn-text">Learn more &rarr;</a>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                srcset="img/nat-1.jpg 300w, img/jam-1-large.jpg 1000w"
+                sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px"
+                alt="Photo1"
+                class="composition__photo composition__photo--p1"
+                src="img/jam-1-large.jpg"
+              />
+              <img
+                srcset="img/nat-2.jpg 300w, img/jam-2-large.jpg 1000w"
+                sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px"
+                alt="Photo2"
+                class="composition__photo composition__photo--p2"
+                src="img/jam-2-large.jpg"
+              />
 
-                <div class="row">
-                    <div class="col-1-of-2">
-                        <h3 class="heading-tertiary u-margin-bottom-small">
-                            modern frontend web development architecture
-                        </h3>
-                        <p class="paragraph">Front end developers can focus on the front end, without being tied to a monolithic architecture. This usually means quicker and more focused development.</p>
-                        <h3 class="heading-tertiary u-margin-bottom-small">
-                            better performance, lower cost and greater scalability.
-                        </h3>
-                        <p class="paragraph">If your product suddenly goes viral and has many active users, the CDN seamlessly compensates.</p>                        
-                        <a href="#" class="btn-text">Learn more &rarr;</a>
-                    </div>
-                    <div class="col-1-of-2">
-                         <div class="composition">
-                             <img 
-                                srcset="img/nat-1.jpg 300w, img/jam-1-large.jpg 1000w"
-                                sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px"
-                                alt="Photo1"
-                                class="composition__photo composition__photo--p1"
-                                src="img/jam-1-large.jpg"
-                             >
-                             <img 
-                                srcset="img/nat-2.jpg 300w, img/jam-2-large.jpg 1000w"
-                                sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px"
-                                alt="Photo2"
-                                class="composition__photo composition__photo--p2"
-                                src="img/jam-2-large.jpg"
-                             >
-
-                            <img 
-                                srcset="img/nat-3.jpg 300w, img/jam-3-large.jpg 1000w"
-                                sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px"
-                                alt="Photo3"
-                                class="composition__photo composition__photo--p3"
-                                src="img/jam-3-large.jpg"
-                            >
-                             <!--
+              <img
+                srcset="img/nat-3.jpg 300w, img/jam-3-large.jpg 1000w"
+                sizes="(max-width:900px) 20vw, (max-width: 600px) 30vw, 300px"
+                alt="Photo3"
+                class="composition__photo composition__photo--p3"
+                src="img/jam-3-large.jpg"
+              />
+              <!--
                              <img src="img/jam-1-large.jpg" alt="photo 1" class="composition__photo composition__photo--p1">
                              <img src="img/jam-2-large.jpg" alt="photo 2" class="composition__photo composition__photo--p2">
                              <img src="img/jam-3-large.jpg" alt="photo 3" class="composition__photo composition__photo--p3">
                             -->
-                            </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-features">
-         
-                <div class="row">
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon fab fa-js"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">JavaScript</h3>
-                        <p class="feature-box__text">  Dynamic functionalities are handled by JavaScript. There is no restriction on which framework or library you must use.</p>
-                        </div>
-                    </div>
-              
-                    <div class="col-1-of-4">
-                        <div class="feature-box"> 
-                            <i class="feature-box__icon fab fa-codepen"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">APIs</h3>
-                        <p class="feature-box__text">  Server side operations are abstracted into reusable APIs and accessed over HTTPS with JavaScript. These can services.</p>
-                        </div>
-                    </div>
-           
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon fas fa-globe"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">Markup</h3>
-                        <p class="feature-box__text">  Websites are served as static HTML files. These can be generated from source files, such as Markdown, using a Static Site Generator.
-
-                            .</p>
-                        </div>
-                    </div>
-                
-                    <div class="col-1-of-4">
-                        <div class="feature-box">
-                            <i class="feature-box__icon fab fa-react"></i>
-                            <h3 class="heading-tertiary u-margin-bottom-small">React</h3>
-                        <p class="feature-box__text">React with gatsby the modern jamstack,  React will efficiently update and render just the right components when your data changes.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="section-tours" id="section-tours">
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        JAMstack modern web development
-                    </h2>
-               </div>
-
-               <div class="row">
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--1">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--1">
-                                    Faster performance 
-                                </span>
-                                
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>performance</li>
-                                    <li>More secure</li>
-                                    <li>Less expensive</li>
-                                    <li>Better developer experience</li>
-                                    <li>Scalability</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="card__side card__side--back card__side--back-1">
-                         <div class="card__cta">
-                            <div class="card__price-box">
-                                <p class="card__price-only">Get Course Only</p>
-                                <p class="card__price-value">$49</p>
-                             </div>
-                             <a href="#popup" class="btn btn--white">Check Now!</a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1-of-3">
-                        <div class="card">
-                            <div class="card__side card__side--front">
-                                <div class="card__picture card__picture--2">
-                                    &nbsp;
-                                </div>
-                                <h4 class="card__heading">
-                                    <span class="card__heading-span card__heading-span--2">
-                                         delivery network 
-                                    </span>
-                                    
-                                </h4>
-                                <div class="card__details">
-                                    <ul>
-                                        <li>performance</li>
-                                        <li>More secure</li>
-                                        <li>Less expensive</li>
-                                        <li>Better developer experience</li>
-                                        <li>Scalability</li>
-                                    </ul>
-                                </div>
-    
-                            </div>
-                            <div class="card__side card__side--back card__side--back-2">
-                             <div class="card__cta">
-                                <div class="card__price-box">
-                                    <p class="card__price-only">Get Course Only</p>
-                                    <p class="card__price-value">$49</p>
-                                 </div>
-                                 <a href="#popup" class="btn btn--white">Check Now!</a>
-                              </div>
-                            </div>
-                        </div>
-
-                        
-                </div>
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--3">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--3">
-                                    Atomic deploys
-                                </span>
-                                
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>performance</li>
-                                    <li>More secure</li>
-                                    <li>Less expensive</li>
-                                    <li>Better developer experience</li>
-                                    <li>Scalability</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="card__side card__side--back card__side--back-3">
-                         <div class="card__cta">
-                            <div class="card__price-box">
-                                <p class="card__price-only">Get Course Only</p>
-                                <p class="card__price-value">$49</p>
-                             </div>
-                             <a href="#popup" class="btn btn--white">Check Now!</a>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <div class="u-center-text u-margin-top-huge">
-                    <a href="#" class="btn btn--bluegrey">Discover all courses</a>
-              </div>
-            </section>
-
-            <section class="section-stories">
-                <div class="bg-video">
-                    <video class="bg-video__content" autoplay muted loop>
-                        <source src="img/Undo.mp4" type="video/mp4">
-                        <source src="img/video.webm" type="video/webm">    
-                            Your browser is not supported !
-                    </video>
-                </div>
-
-                <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">
-                        Here are the main benefits provided by the JAMstack
-                    </h2>
-               </div>
-               <div class="row">
-                    <div class="story">
-                        <figure class="story__shape">
-                            <img class="story__img" src="./img/jam-1-large.jpg" alt="image benif 1">
-                            <figcaption class="story__caption">
-                                delivery network
-                            </figcaption>
-                        </figure>
-                            <div class="story__text">
-                                <h3 class="u-margin-bottom-small heading-tertiary">
-                                    Content delivery network
-                                </h3>
-                                <p> Since all the markup and assets are pre-built,
-                                     they can be served via CDN.
-                                     CDN allows for the quick transfer of assets needed for loading Internet content including HTML pages,
-                                      javascript files, stylesheets,
-                                        and today the majority of web traffic is served through CDNs.
-                                </p>
-                            </div>
-                    </div>
-               </div>
-
-               <div class="row">
-                <div class="story">
-                    <figure class="story__shape">
-                        <img class="story__img" src="./img/jam-3-large.jpg" alt="image benif 1">
-                        <figcaption class="story__caption">
-                            Atomic deploys
-                        </figcaption>
-                    </figure>
-                        <div class="story__text">
-                            <h3 class="u-margin-bottom-small heading-tertiary">
-                                Automated builds
-                            </h3>
-                            <p> Your server is notified when a new build is required, typically via webhooks. Server builds the project, updates the CDNs and the site is live.
-                                Each deploy is a full snapshot of the site. This helps guarantee a consistent version of the site globally.
-                            </p>
-                        </div>
-                </div>
-           </div>
-            <div class="u-center-text u-margin-top-huge">
-                <a href="#" class="btn-text">Read more ! &rarr;</a>
             </div>
-        </section>
-        
-        <section class="section-book">
-                <div class="row">
-                    <div class="book">
-                        <div class="book__form">
-                            <form action="#" class="form">
-                                <div class="u-margin-bottom-medium">
-                                    <h2 class="heading-secondary">
-                                        Start learning now 
-                                    </h2>
-                               </div>
-                                <div class="form__group">
-                                    <input id="name" type="text" autocomplete="off" placeholder="Full name" class="form__input" required>
-                                    <label class="form__label" for="name">Full name</label>
-                                </div>
-                                <div class="form__group">
-                                    <input id="name" type="email" autocomplete="off" placeholder="Email adress" class="form__input" required>
-                                    <label class="form__label" for="name">Email</label>
-                                </div>
-                               
-                                <div class="u-margin-bottom-medium form__group">    
-                                        <div class="form__radio-group">
-                                            <input id='small' type="radio" class="form__radio-input" name="course">
-                                            <label for="small" class="form__radio-label">
-                                                <span class="form__radio-button"></span>
-                                                Free 7 day trial
-                                            </label>
-                                        </div>
-
-                                        <div class="form__radio-group">
-                                            <input id='large' type="radio" class="form__radio-input"  name="course">
-                                            <label for="large" class="form__radio-label">
-                                                <span class="form__radio-button"></span>
-                                                Unlimited access
-                                            </label>
-                                        </div>
-                                </div>
-                                
-                                <div class="form__group">
-                                    <button class="btn btn--bluegrey">
-                                        Next step &rarr;
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        </main>
-
-        <footer class="footer">
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="footer__navigation">
-                        <ul class="footer__list">
-                            <li class="footer__item"><a href="#" class="footer__link">MDN</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                            <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-1-of-2">
-                    <div class="footer__copyright">
-                        Made by <a href="https://www.linkedin.com/in/ienouali/" target="_blank" class="footer__link">&nbsp;ienouali&nbsp;</a>. Copyright &copy; by ienouali - Frontend developer. You are 100% allowed to use this web page for both personal and commercial use. but NOT to claim it as your own design. A credit to the original author. ienouali.
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <div class="popup" id="popup">
-            <div class="popup__content">
-                <div class="popup__left">
-                    <img src="img/wallpaper2.jpg" alt="pic1" class="popup__img">
-                    <img src="img/wallpaper3.jpg" alt="pic1" class="popup__img">
-                </div>
-                <div class="popup__right">
-                    <a href="#section-tours" class="popup__close">&times;</a>
-                    <h2 class="heading-secondary">Start learning</h2>
-                    <h3 class="heading-tertiary u-margin-bottom-medium">Important &ndash; Please read these terms before starting</h3>
-                    <p class="popup__text">
-                        Fast and secure sites and apps delivered by pre-rendering files and serving them directly from a CDN, removing the requirement to manage or run web servers.
-                        With a Jamstack project, anyone should be able to do a git clone, install any needed dependencies with a standard procedure (like npm install), and be ready to run the full project locally. No databases to clone, no complex installs. This reduces contributor friction, and also simplifies staging and testing workflows.
-                    </p>
-                    <a href="#" class="btn btn--bluegrey">Get started!</a>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- Start section TEST 
+      </section>
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon fab fa-js"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">JavaScript</h3>
+              <p class="feature-box__text">
+                Dynamic functionalities are handled by JavaScript. There is no
+                restriction on which framework or library you must use.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon fab fa-codepen"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">APIs</h3>
+              <p class="feature-box__text">
+                Server side operations are abstracted into reusable APIs and
+                accessed over HTTPS with JavaScript. These can services.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon fas fa-globe"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Markup</h3>
+              <p class="feature-box__text">
+                Websites are served as static HTML files. These can be generated
+                from source files, such as Markdown, using a Static Site
+                Generator. .
+              </p>
+            </div>
+          </div>
+
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon fab fa-react"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">React</h3>
+              <p class="feature-box__text">
+                React with gatsby the modern jamstack, React will efficiently
+                update and render just the right components when your data
+                changes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tours" id="section-tours">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">JAMstack modern web development</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">
+                    Faster performance
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>performance</li>
+                    <li>More secure</li>
+                    <li>Less expensive</li>
+                    <li>Better developer experience</li>
+                    <li>Scalability</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Get Course Only</p>
+                    <p class="card__price-value">$49</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Check Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">
+                    delivery network
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>performance</li>
+                    <li>More secure</li>
+                    <li>Less expensive</li>
+                    <li>Better developer experience</li>
+                    <li>Scalability</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Get Course Only</p>
+                    <p class="card__price-value">$49</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Check Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">
+                    Atomic deploys
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>performance</li>
+                    <li>More secure</li>
+                    <li>Less expensive</li>
+                    <li>Better developer experience</li>
+                    <li>Scalability</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Get Course Only</p>
+                    <p class="card__price-value">$49</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Check Now!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn btn--bluegrey">Discover all courses</a>
+        </div>
+      </section>
+
+      <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/Undo.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/webm" />
+            Your browser is not supported !
+          </video>
+        </div>
+
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Here are the main benefits provided by the JAMstack
+          </h2>
+        </div>
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                class="story__img"
+                src="./img/jam-1-large.jpg"
+                alt="image benif 1"
+              />
+              <figcaption class="story__caption">delivery network</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="u-margin-bottom-small heading-tertiary">
+                Content delivery network
+              </h3>
+              <p>
+                Since all the markup and assets are pre-built, they can be
+                served via CDN. CDN allows for the quick transfer of assets
+                needed for loading Internet content including HTML pages,
+                javascript files, stylesheets, and today the majority of web
+                traffic is served through CDNs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img
+                class="story__img"
+                src="./img/jam-3-large.jpg"
+                alt="image benif 1"
+              />
+              <figcaption class="story__caption">Atomic deploys</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="u-margin-bottom-small heading-tertiary">
+                Automated builds
+              </h3>
+              <p>
+                Your server is notified when a new build is required, typically
+                via webhooks. Server builds the project, updates the CDNs and
+                the site is live. Each deploy is a full snapshot of the site.
+                This helps guarantee a consistent version of the site globally.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="u-center-text u-margin-top-huge">
+          <a href="#" class="btn-text">Read more ! &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Start learning now</h2>
+                </div>
+                <div class="form__group">
+                  <input
+                    id="name"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Full name"
+                    class="form__input"
+                    required
+                  />
+                  <label class="form__label" for="name">Full name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    id="name"
+                    type="email"
+                    autocomplete="off"
+                    placeholder="Email adress"
+                    class="form__input"
+                    required
+                  />
+                  <label class="form__label" for="name">Email</label>
+                </div>
+
+                <div class="u-margin-bottom-medium form__group">
+                  <div class="form__radio-group">
+                    <input
+                      id="small"
+                      type="radio"
+                      class="form__radio-input"
+                      name="course"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Free 7 day trial
+                    </label>
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      id="large"
+                      type="radio"
+                      class="form__radio-input"
+                      name="course"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Unlimited access
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--bluegrey">Next step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">MDN</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Carrers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-1-of-2">
+          <div class="footer__copyright">
+            Made by
+            <a
+              href="https://www.linkedin.com/in/ienouali/"
+              target="_blank"
+              class="footer__link"
+              >&nbsp;ienouali&nbsp;</a
+            >. Copyright &copy; by ienouali - Frontend Developer. You are 100%
+            allowed to use this web page for both personal and commercial use.
+            but NOT to claim it as your own design. A credit to the original
+            author. ienouali.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/wallpaper2.jpg" alt="pic1" class="popup__img" />
+          <img src="img/wallpaper3.jpg" alt="pic1" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary">Start learning</h2>
+          <h3 class="heading-tertiary u-margin-bottom-medium">
+            Important &ndash; Please read these terms before starting
+          </h3>
+          <p class="popup__text">
+            Fast and secure sites and apps delivered by pre-rendering files and
+            serving them directly from a CDN, removing the requirement to manage
+            or run web servers. With a Jamstack project, anyone should be able
+            to do a git clone, install any needed dependencies with a standard
+            procedure (like npm install), and be ready to run the full project
+            locally. No databases to clone, no complex installs. This reduces
+            contributor friction, and also simplifies staging and testing
+            workflows.
+          </p>
+          <a href="#" class="btn btn--bluegrey">Get started!</a>
+        </div>
+      </div>
+    </div>
+    <!-- Start section TEST 
         <section class="grid-test">
             <div class="row">
                 <div class="col-1-of-2">
@@ -481,6 +544,6 @@
             </div>
         </section>
     -->
-       <!-- End Section TEST -->
-    </body>
+    <!-- End Section TEST -->
+  </body>
 </html>
